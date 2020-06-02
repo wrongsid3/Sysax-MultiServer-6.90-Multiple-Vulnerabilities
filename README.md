@@ -1,6 +1,7 @@
 # Sysax-MultiServer-6.90-Multiple-Vulnerabilities
 
 <p>Multiple vulnerabilities were discovered in Sysax Multi Server 6.90.</p>
+<p>*** Vendor was informed on May 19th, 2020 but I have not received any feedback ***</p>
 <p><strong>1) Insecure Permissions and Information Disclosure via error handling</strong><br />::: CVE-2020-13227 :::</p>
 <p>An attacker can determine the username (under which the web server is running) by triggering an invalid path permission error. This bypasses the fakepath protection mechanism.</p>
 <p>PoC screen: https://pasteboard.co/J9eF12G.png</p>
