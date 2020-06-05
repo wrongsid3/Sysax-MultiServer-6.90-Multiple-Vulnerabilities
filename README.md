@@ -6,8 +6,8 @@
 <p>An attacker can determine the username (under which the web server is running) by triggering an invalid path permission error. This bypasses the fakepath protection mechanism.</p>
 <p>PoC:</p>
 <p>http://192.168.88.131/scgi?sid=7d2ec36cd2f0a42929a5672c9cc5f0320a666155&amp;pid=transferpage2_name1_(folder_where_you_don't_have permissions).htm</p>
-<div>E.g</div>
-<div>http://192.168.88.131/scgi?sid=7d2ec36cd2f0a42929a5672c9cc5f0320a666155&amp;pid=transferpage2_name1_johnfolder.htm&nbsp;&nbsp;</div>
+<p>E.g</p>
+<div>http://192.168.88.131/scgi?sid=7d2ec36cd2f0a42929a5672c9cc5f0320a666155&amp;pid=transferpage2_name1_johnfolder.htm&nbsp;&nbsp;&nbsp;</div>
 <p>PoC screen: https://pasteboard.co/J9eF12G.png</p>
 <p><strong>2) Reflected Cross Site Scripting (XSS)</strong><br />::: CVE-2020-13228 :::</p>
 <p>There is a reflected XSS via the /scgi sid parameter.</p>
