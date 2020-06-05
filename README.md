@@ -5,9 +5,9 @@
 <p><strong>1) Insecure Permissions and Information Disclosure via error handling</strong><br />::: CVE-2020-13227 :::</p>
 <p>An attacker can determine the username (under which the web server is running) by triggering an invalid path permission error. This bypasses the fakepath protection mechanism.</p>
 <p>PoC:</p>
-<p><a href="http://192.168.88.131/scgi?sid=7d2ec36cd2f0a42929a5672c9cc5f0320a666155&amp;pid=transferpage2_name1_(folder" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=http://192.168.88.131/scgi?sid%3D7d2ec36cd2f0a42929a5672c9cc5f0320a666155%26pid%3Dtransferpage2_name1_(folder&amp;source=gmail&amp;ust=1591449741235000&amp;usg=AOvVaw3-JyvWkyrWn2HgYasPEgsq">http://192.168.88.131/scgi?<wbr />sid=<wbr />7d2ec36cd2f0a42929a5672c9cc5f0<wbr />320a666155&amp;pid=transferpage2_<wbr />name1_(folder_</a>where_you_don't_have permissions).htm</p>
+<p>http://192.168.88.131/scgi?<wbr />sid=<wbr />7d2ec36cd2f0a42929a5672c9cc5f0320a666155&amp;pid=transferpage2_<wbr />name1_(folder_where_you_don't_have permissions).htm</p>
 <div>E.g</div>
-<div><a href="http://192.168.88.131/scgi?sid=7d2ec36cd2f0a42929a5672c9cc5f0320a666155&amp;pid=transferpage2_name1_johnfolder.htm" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=http://192.168.88.131/scgi?sid%3D7d2ec36cd2f0a42929a5672c9cc5f0320a666155%26pid%3Dtransferpage2_name1_johnfolder.htm&amp;source=gmail&amp;ust=1591449741235000&amp;usg=AOvVaw2u3Mq42cAbcQFNTA8MUSfa">http://192.168.88.131/scgi?<wbr />sid=<wbr />7d2ec36cd2f0a42929a5672c9cc5f0<wbr />320a666155&amp;pid=transferpage2_<wbr />name1_johnfolder.htm</a>&nbsp;&nbsp;</div>
+<div>http://192.168.88.131/scgi?<wbr />sid=<wbr />7d2ec36cd2f0a42929a5672c9cc5f0<wbr />320a666155&amp;pid=transferpage2_<wbr />name1_johnfolder.htm&nbsp;&nbsp;</div>
 <p>PoC screen: https://pasteboard.co/J9eF12G.png</p>
 <p><strong>2) Reflected Cross Site Scripting (XSS)</strong><br />::: CVE-2020-13228 :::</p>
 <p>There is a reflected XSS via the /scgi sid parameter.</p>
